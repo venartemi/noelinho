@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('/w3images/forestbridge.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+body{
+    background-image: url(consejos-llorar-bebe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg">
+
+  <div class="middle">
+    <h1>A NOEL LE QUEDAN:</h1>
+    <hr>
+    <h3><div id="time-elapsed"></div></h3>
+    <script>
+        var dateToday = new Date();
+        var lastDayOfMonth = new Date(2022, 06, 30).getDate();
+        var daysUntilEndOfMonth = lastDayOfMonth - dateToday.getDate();
+
+        document.getElementById("time-elapsed").innerHTML = daysUntilEndOfMonth +" dia(s) naturales para cambiarse de sitio.";
+        console.log(dateToday.getDate());
+        console.log(lastDayOfMonth);
+        
+     
+
+    </script>
+    <h1>tic, tac Mbappe</h1>
+  </div>
+  <div class="bottomleft">
+    <p></p>
+  </div>
+</div>
+
+</body>
+</html>
